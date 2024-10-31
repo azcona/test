@@ -1,0 +1,82 @@
+:root {
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-large: 2em;
+    --gap-large: 24px;
+    --border-size-large: 16px;
+    --min-size-ring: 160px;
+}
+
+.ring-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    font-size: var(--font-size-medium);
+    gap: var(--gap-large);
+}
+  
+.ring {
+    display: flex;
+    background: var(--color-white);
+    border: var(--border-size-large) solid var(--color-light-grey);
+    background-position: center;
+    border-radius: 50%;
+    min-width: var(--min-size-ring);
+    min-height: var(--min-size-ring);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--font-size-large);
+    color: var(--color-black);
+
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+.ring--text {
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-black);
+    font-size: var(--font-size-small);
+}
+
+.ring--text h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.ring--warning {
+    border-color: var(--color-warning);
+}
+
+.ring--warning h3 {
+    color: var(--color-warning-text);
+}
+
+.ring--success {
+    border-color: var(--color-success);
+}
+
+.ring--success h3 {
+    color: var(--color-success-text);
+}
+
+.ring--danger {
+    border-color: var(--color-danger);
+}
+
+.ring--danger h3 {
+    color: var(--color-danger-text);
+}
+
+.ring--info {
+    border-color: var(--color-info);
+}
+
+.ring--info h3 {
+    color: var(--color-info-text);
+}

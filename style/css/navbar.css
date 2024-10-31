@@ -1,0 +1,44 @@
+:root {
+    --min-height-viewport: 100vh;
+    --margin-top-small: 5vh;
+    --width-large: 180px;
+    --width-medium: 32px;
+    --height-medium: 32px;
+    --gap-small: 8px;
+}
+
+body {
+    display: flex;
+    min-height: var(--min-height-viewport);
+    flex-direction: column;
+}
+
+main {
+    margin-top: var(--margin-top-small);
+    flex: 1 0 auto;
+}
+
+.brand-logo img {
+    width: var(--width-large);
+}
+
+.flex {
+    display: flex;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-small);
+}
+
+.user img {
+    width: var(--width-medium);
+    height: var(--height-medium);
+}
+
+.bg-grey {
+    background: var(--color-bg-gradient-start);
+    background: linear-gradient(180deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 100%);
+}

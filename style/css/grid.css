@@ -1,0 +1,8 @@
+.grid {
+    display: grid;
+}
+
+.grid--input-button {
+    grid-template-columns: 1fr auto;
+    grid-gap: 8px;
+}

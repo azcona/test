@@ -1,0 +1,17 @@
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--color-dark-grey);
+    font-weight: bolder;
+}
+
+.text-center {
+    text-align: center;
+    align-self: center;
+}

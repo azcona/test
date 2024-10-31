@@ -1,0 +1,15 @@
+.icon--success {
+    color: var(--color-success-text);
+}
+
+.icon--info {
+    color: var(--color-info-text);
+}
+
+.icon--dark-grey {
+    color: var(--color-dark-grey);
+}
+
+.icon--success, .icon--info, .icon--dark-grey {
+    cursor: pointer;
+} 

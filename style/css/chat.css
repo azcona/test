@@ -1,0 +1,80 @@
+:root {
+    --font-size-small: 12px;
+    --font-size-medium: 13px;
+    --padding-small: 10px;
+    --padding-large-vertical: 40px;
+    --margin-small: 10px;
+    --margin-right-large: 2rem;
+    --margin-right-small: 0.7rem;
+    --min-width-small: 25%;
+    --max-width-large: 95%;
+    --border-radius-large: 20px;
+    --box-shadow-large: 0 0px 25px var(--color-shadow);
+    --box-shadow-small: 0 1px 2px var(--color-shadow);
+    --box-shadow-chat-form: 0 -2px 5px var(--color-shadow);
+}
+
+.msgcard {
+    box-shadow: var(--box-shadow-large);
+}
+
+.chat-box {
+    height: 53vh;
+    overflow: auto;
+    position: relative;
+}
+
+.chat-log {
+    overflow: auto;
+}
+
+.chat-log--item {
+    background: var(--color-chat-item-bg);
+    padding: var(--padding-small);
+    margin: 0 auto var(--margin-small);
+    margin-right: var(--margin-right-large);
+    max-width: var(--max-width-large);
+    min-width: var(--min-width-small);
+    float: left;
+    font-size: var(--font-size-medium);
+    border-radius: 0 var(--border-radius-large) var(--border-radius-large) var(--border-radius-large);
+    box-shadow: var(--box-shadow-small);
+    clear: both;
+}
+
+.chat-log--item.chat-log--item__own {
+    float: right;
+    background: var(--color-chat-own-bg);
+    text-align: right;
+    margin-right: var(--margin-right-small);
+    margin-left: var(--margin-right-large);
+    border-radius: var(--border-radius-large) 0 var(--border-radius-large) var(--border-radius-large);
+}
+
+.chat-form {
+    background: var(--color-form-bg);
+    padding: var(--padding-large-vertical) 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    box-shadow: var(--box-shadow-chat-form);
+}
+
+.chat-log__author {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.chat-log--time {
+    font-size: var(--font-size-small);
+    opacity: 0.5;
+    text-align: left;
+    margin-top: 0.2rem;
+}
+
+.divider {
+    background: var(--color-light-grey);
+}

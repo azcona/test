@@ -1,0 +1,25 @@
+:root {
+    --font-size-small: 12px;
+    --padding-small-vertical: 8px;
+    --padding-small-horizontal: 4px;
+    --grid-column-size-small: 50px;
+    --grid-column-size-medium: 2fr;
+    --grid-column-size-xsmall: 0.5fr;
+    --grid-column-size-large: 1fr;
+}
+
+.table-grid {
+    display: grid;
+    grid-template-columns: var(--grid-column-size-small) var(--grid-column-size-medium) var(--grid-column-size-xsmall) var(--grid-column-size-xsmall) var(--grid-column-size-small) var(--grid-column-size-large);
+    font-size: var(--font-size-small);
+    height: fit-content;
+}
+
+.table-grid span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-small-vertical) var(--padding-small-horizontal);
+    text-align: center;
+    border-bottom: 1px solid var(--color-light-grey);
+}

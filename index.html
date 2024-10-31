@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!--Import Nunito Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="/style/style.css">
+
+</head>
+<body>
+    <header class="header navbar-fixed">
+          <nav class="nav-extended blue darken-4">
+            <div class="nav-wrapper container">
+              <a href="#" class="brand-logo"><img src="/assets/images/Transparent-Neurored-Logo.webp" alt="logo"></a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <div id="nav-mobile" class="right hide-on-med-and-down">
+                <div class="user">
+                    <img src="assets/images/user.webp" alt="user-image" class="circle responsive-img">
+                    <a href="#">
+                        John Doe
+                    </a>
+                    <i class="material-icons light-green-text accent-3">logout</i></li>
+                </div>
+               </div>
+            </div>
+            <div class="nav-content container">
+              <ul class="tabs tabs-transparent">
+                <li class="tab"><a class="active" href="#">Home</a></li>
+                <li class="tab"><a href="#">Option 1</a></li>
+                <li class="tab disabled"><a href="#">Option 2</a></li>
+                <li class="tab"><a href="#">Option 3</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li class="user px-6 py-5">
+            <img src="assets/images/user.webp" alt="" class="circle responsive-img">
+            <span>
+                John Doe
+            </span>
+            <i class="material-icons light-green-text accent-3">logout</i></li>
+        </li>
+
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+    </ul>
+
+    <main>
+        <div class="container my-6">
+            <h1 class="text-center">Welcome to VENDOR Portal</h1>
+        </div>
+        <section class="bg-grey mt-3">
+                <div class="container my-5">
+                    <h4>Work Order</h4>
+                </div>
+                <div class="container ring-wrap pb-6">
+                    <div class="ring ring--warning">
+                        <div class="ring--text">
+                            Pending
+                            <h3>45</h3>
+                        </div> 
+                    </div>
+                   <div class="ring ring--success">
+                        <div class="ring--text">
+                            Accepted
+                            <h3>9</h3>
+                        </div> 
+                   </div>
+                   <div class="ring ring--info">
+                        <div class="ring--text">
+                            In Transit
+                            <h3>6</h3>
+                        </div> 
+                    </div>
+                   <div class="ring ring--danger">
+                        <div class="ring--text">
+                            Canceled
+                            <h3>0</h3>
+                        </div> 
+                    </div>
+                 </div>
+        </section>
+
+        <!-- table -->
+
+        <section class="container row mt-6">
+
+            <section class="col s12 m12 l12 xl8">
+                <h4 class="my-5">List of Work Orders</h4>
+                <div class="table-grid mr-3 card card-content p-5">
+                    <span><strong>Number</strong></span>
+                    <span><strong>Route</strong></span>
+                    <span><strong>Start Date</strong></span>
+                    <span><strong>End Date</strong></span>
+                    <span><strong>Capacity</strong></span>
+                    <span><strong>Actions</strong></span>
+                  
+                    <span>1</span>
+                    <span>Route A</span>
+                    <span>01/01/24</span>
+                    <span>05/07/24</span>
+                    <span>50</span>
+                    <span>
+                      <i class="material-icons icon--success">edit</i>
+                      <i class="material-icons icon--info">content_copy</i>
+                      <i class="material-icons icon--dark-grey">delete</i>
+                    </span>
+                  
+                    <span>2</span>
+                    <span>Route B</span>
+                    <span>01/01/24</span>
+                    <span>05/07/24</span>
+                    <span>75</span>
+                    <span>
+                      <i class="material-icons icon--success">edit</i>
+                      <i class="material-icons icon--info">content_copy</i>
+                      <i class="material-icons icon--dark-grey">delete</i>
+                    </span>
+                  
+                    <span>3</span>
+                    <span>Route C</span>
+                    <span>01/01/24</span>
+                    <span>05/07/24</span>
+                    <span>100</span>
+                    <span>
+                      <i class="material-icons icon--success">edit</i>
+                      <i class="material-icons icon--info">content_copy</i>
+                      <i class="material-icons icon--dark-grey">delete</i>
+                    </span>
+                  
+                    <span>4</span>
+                    <span>Route A</span>
+                    <span>01/01/24</span>
+                    <span>05/07/24</span>
+                    <span>50</span>
+                    <span>
+                      <i class="material-icons icon--success">edit</i>
+                      <i class="material-icons icon--info">content_copy</i>
+                      <i class="material-icons icon--dark-grey">delete</i>
+                    </span>
+                  
+                    <span>5</span>
+                    <span>Route B</span>
+                    <span>01/01/24</span>
+                    <span>05/07/24</span>
+                    <span>75</span>
+                    <span>
+                      <i class="material-icons icon--success">edit</i>
+                      <i class="material-icons icon--info">content_copy</i>
+                      <i class="material-icons icon--dark-grey">delete</i>
+                    </span>
+                  
+                    <span>6</span>
+                    <span>Route C</span>
+                    <span>01/01/24</span>
+                    <span>05/07/24</span>
+                    <span>100</span>
+                    <span>
+                      <i class="material-icons icon--success">edit</i>
+                      <i class="material-icons icon--info">content_copy</i>
+                      <i class="material-icons icon--dark-grey">delete</i>
+                    </span>
+                    <span>7</span>
+                    <span>Route C</span>
+                    <span>01/01/24</span>
+                    <span>05/07/24</span>
+                    <span>100</span>
+                    <span>
+                      <i class="material-icons icon--success">edit</i>
+                      <i class="material-icons icon--info">content_copy</i>
+                      <i class="material-icons icon--dark-grey">delete</i>
+                    </span>
+                  
+                    <span>8</span>
+                    <span>Route A</span>
+                    <span>01/01/24</span>
+                    <span>05/07/24</span>
+                    <span>50</span>
+                    <span>
+                      <i class="material-icons icon--success">edit</i>
+                      <i class="material-icons icon--info">content_copy</i>
+                      <i class="material-icons icon--dark-grey">delete</i>
+                    </span>
+                  
+                    <span>9</span>
+                    <span>Route B</span>
+                    <span>01/01/24</span>
+                    <span>05/07/24</span>
+                    <span>75</span>
+                    <span>
+                      <i class="material-icons icon--success">edit</i>
+                      <i class="material-icons icon--info">content_copy</i>
+                      <i class="material-icons icon--dark-grey">delete</i>
+                    </span>
+                  
+                    <span>10</span>
+                    <span>Route C</span>
+                    <span>01/01/24</span>
+                    <span>05/07/24</span>
+                    <span>100</span>
+                    <span>
+                      <i class="material-icons icon--success">edit</i>
+                      <i class="material-icons icon--info">content_copy</i>
+                      <i class="material-icons icon--dark-grey">delete</i>
+                    </span>
+                  </div>
+                  
+            </section>
+
+            <!-- chat -->
+            
+            <section class="col s12 m12 l12 xl4">
+                <h4 class="my-5">Messages</h4>
+                    <div class="card chat-box">
+                        <div class="card-content">
+                            <div id="messages_container" class="chat-log">
+                            
+                            <div class="chat-log--item chat-log--item__own">
+                                <div class="right-align">
+                                <span class="chat-log__author">@James</span>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="chat-log_message">
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="left-align chat-log--time">
+                                23:15
+                                </div>
+                            </div>
+                            
+                            <div class="chat-log--item chat-log--item__own">
+                                <div class="right-align">
+                                <span class="chat-log__author">@James</span>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="chat-log_message">
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="left-align chat-log--time">
+                                23:15
+                                </div>
+                            </div>
+                
+                            <div class="chat-log--item my-4">
+                                <div class="right-align">
+                                <span class="chat-log__author">@MJavadSF</span>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="chat-log_message">
+                                <p>MjavadSF is my user ID in all social networks like Twitter, Instagram, Facebook...</p>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="left-align chat-log--time">
+                                23:15
+                                </div>
+                            </div>
+
+                            <div class="chat-log--item chat-log--item__own">
+                                <div class="right-align">
+                                <span class="chat-log__author">@James</span>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="chat-log_message">
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="left-align chat-log--time">
+                                23:15
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </section>
+        </section>
+
+    </main>
+
+
+    <footer class="page-footer blue darken-4">
+        <div class="footer-copyright">
+            <div class="container">
+            Madrid, Spain
+            <a class="grey-text text-lighten-4 right" href="#!">© 2024 Copyright Text</a>
+            </div>
+          </div>
+    </footer>
+
+
+
+<!-- Compiled and minified JavaScript -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  M.AutoInit();
+});
+  
+function scrollDown() {
+  $('#messages_container').animate({scrollTop:$('#messages_container').prop('scrollHeight')}, 1000);
+}
+</script>
+
+
+
+</body>
+</html>
